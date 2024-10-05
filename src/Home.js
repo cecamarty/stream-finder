@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import './MovieCard.css'; // Import the CSS file for movie cards
 
 const Home = () => {
-  const [showMoreGenres, setShowMoreGenres] = useState({});
   const [movies, setMovies] = useState([]);
   const [genres, setGenres] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
@@ -41,13 +40,8 @@ const Home = () => {
     return array.sort(() => Math.random() - 0.5);
   };
 
-// Logic to show more movies of the same genre
-// Toggle the state for the clicked genre
   const handleShowMore = (genre) => {
-    setShowMoreGenres(prevState => ({
-    ...prevState,
-    [genre]: !prevState[genre],
-    }));
+    // Logic to show more movies of the same genre
     alert(`Show more movies for genre: ${genre}`);
   };
 
@@ -115,11 +109,10 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <button className="back-to-top-button" onClick={scrollToTop}>
-        <span className="arrow">↑</span> BACK TO TOP
-      </button>
+      <button className="back-to-top" onClick={scrollToTop}>↑ Back to Top</button>
     </div>
   );
 };
 
 export default Home;
+

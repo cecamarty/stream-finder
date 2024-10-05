@@ -173,32 +173,3 @@
 .back-to-top:hover {
   background-color: #555; /* Hover effect for back-to-top button */
 }
-/* Button.css */
-
-.back-to-top-button {
-  /* Customize the following styles as needed */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: orange;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle drop shadow */
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
-
-  /* Optional: Center the arrow icon vertically */
-  line-height: 1;
-}
-
-.back-to-top-button:hover {
-  background-color: orange;
-  color: white;
-}
-
-.arrow {
-  font-size: 1.2rem;
-  margin-right: 8px;
-}
